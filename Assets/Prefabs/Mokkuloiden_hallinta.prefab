@@ -1,0 +1,263 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
+  m_Layer: 0
+  m_Name: Mokkuloiden_hallinta
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.50562382, y: 4.93231058, z: -2.42108274}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84eabf434ffb35e42aa88cab3449c119, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Kosketusnaytto: 1
+  Hiiriohjaus: 0
+  use_allowed_area: 0
+  public_allowed_area:
+    serializedVersion: 2
+    x: 800
+    y: 480
+    width: 800
+    height: 480
+  smooth_camera_asetukset:
+    kamera_kaytossa: 1
+    target: {fileID: 0}
+    boundries:
+      serializedVersion: 2
+      x: 10
+      y: 10
+      width: 10
+      height: 10
+    movementLagFactor: 1
+    maximumZoom: 1
+    zoomSpeedThreshold: .200000003
+  levelin_lisa_asetukset:
+    kello_asetukset:
+      kaytossa: 1
+      kellonaytto: {fileID: 13200000, guid: f3607e3158485474e818647dcb28ab83, type: 2}
+    skip_level_asetukset:
+      kaytossa: 1
+      vaaditut_yritykset: 3
+      nappulan_asetukset:
+        nappulan_toimintapa: 1
+        hyvaksytyt_kosketukset:
+          maaritetaanko: 0
+          Began: 0
+          Stationary: 0
+          Moved: 0
+          Ended: 0
+        nappulan_toteutustapa: 1
+        GUI_elementtina_asetukset:
+          GUIContent_text: Skip
+          position:
+            serializedVersion: 2
+            x: 100
+            y: 100
+            width: 100
+            height: 100
+          gui_style:
+            m_Name: 
+            m_Normal:
+              m_Background: {fileID: 2800000, guid: a4f9756e8942c674ab3af1f7db3e8a76,
+                type: 3}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+            m_Hover:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+            m_Active:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+            m_Focused:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+            m_OnNormal:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+            m_OnHover:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+            m_OnActive:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+            m_OnFocused:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+            m_Border:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Margin:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Padding:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Overflow:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Font: {fileID: 0}
+            m_FontSize: 20
+            m_FontStyle: 0
+            m_Alignment: 0
+            m_WordWrap: 0
+            m_RichText: 1
+            m_TextClipping: 0
+            m_ImagePosition: 0
+            m_ContentOffset: {x: 0, y: 0}
+            m_FixedWidth: 100
+            m_FixedHeight: 100
+            m_StretchWidth: 0
+            m_StretchHeight: 0
+        GUITexturena_asetukset:
+          gui_texture: {fileID: 13100000, guid: 2c3185379cfd87847a20a9098022f8e2,
+            type: 2}
+        nimi: 
+        key: 
+  pausenappulan_asetukset:
+    nappulan_toimintapa: 1
+    hyvaksytyt_kosketukset:
+      maaritetaanko: 0
+      Began: 0
+      Stationary: 0
+      Moved: 0
+      Ended: 0
+    nappulan_toteutustapa: 1
+    GUI_elementtina_asetukset:
+      GUIContent_text: 
+      position:
+        serializedVersion: 2
+        x: 100
+        y: 100
+        width: 100
+        height: 100
+      gui_style:
+        m_Name: 
+        m_Normal:
+          m_Background: {fileID: 0}
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_Hover:
+          m_Background: {fileID: 0}
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_Active:
+          m_Background: {fileID: 0}
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_Focused:
+          m_Background: {fileID: 0}
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnNormal:
+          m_Background: {fileID: 0}
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnHover:
+          m_Background: {fileID: 0}
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnActive:
+          m_Background: {fileID: 0}
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnFocused:
+          m_Background: {fileID: 0}
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_Border:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Margin:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Padding:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Overflow:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Font: {fileID: 0}
+        m_FontSize: 0
+        m_FontStyle: 0
+        m_Alignment: 0
+        m_WordWrap: 0
+        m_RichText: 1
+        m_TextClipping: 0
+        m_ImagePosition: 0
+        m_ContentOffset: {x: 0, y: 0}
+        m_FixedWidth: 0
+        m_FixedHeight: 0
+        m_StretchWidth: 1
+        m_StretchHeight: 0
+    GUITexturena_asetukset:
+      gui_texture: {fileID: 13100000, guid: b0d2775849f6a4f68a55f99754d2353e, type: 2}
+    nimi: 
+    key: 
+  kuorman_mittaus_parametrit:
+    kuorma_naytto: {fileID: 13200000, guid: d75d1018e8a329347b9c3bfebb26f50a, type: 2}
+    paivitys_vali: 90
+    lukeman_tarkkuus: 4
+    nayta_maksimiaika: 0
+    mitattavat_lkm: 5
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf9f7a1a5e29d4949b97b5aa607fd48f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalScreenWidth: 1024
+  originalScreenHeight: 600
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

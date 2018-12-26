@@ -1,0 +1,505 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 143: {fileID: 14300000}
+  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Rojut_talteen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.3209324, y: -2.50477386, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f90b8ba7650e94fbadcb5c68f378ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tekoaly_asetukset:
+    liipaisuetaisyys_kohdepositiossa: 2
+    jumiutuneeksi_rajatun_alueen_sade: 1
+    lisaa_targetin_havaitsija: 0
+    targetin_havaitsija:
+      max_distance_to_target: 10
+      nakokentta_asteina: 135
+      layerMask:
+        serializedVersion: 2
+        m_Bits: 4294967295
+    lisaa_esteen_havaitsija: 1
+    esteen_havaitsija:
+      havaitsijan_etaisyys_ukkelista: .5
+      havaitsija_viiksen_pituus: 5
+      aukon_minimipituus: 1
+      reunan_maksimi_kulmaheitto: 2
+      reunojen_hylkaysetaisyys: 20
+      kynnys_lkm_hylkaystarkistukseen: 20
+      esteeseen_reagointietaisyys: .5
+      esteeseen_reagointiaika: {x: 2, y: 2}
+      seinan_kaltevuusraja: 45
+      ukkelin_pituus: 1
+      etsinta_alueen_sade: 40
+      layerMask:
+        serializedVersion: 2
+        m_Bits: 4294965759
+      ei_saa_osua_tagit:
+      - UndestroyableEnemy
+    toimintamoodi_valinnat:
+    - asetukset:
+        liikekohteiden_maarittaja:
+          tyyppi: 0
+          asetukset_staattinen:
+            kohteiden_maaritystapa: 0
+            kohteet:
+            - koordinaatti: {x: 0, y: 0}
+              sijainti: {fileID: 0}
+            - koordinaatti: {x: -2, y: 0}
+              sijainti: {fileID: 0}
+            odotusviive_kaannyttaessa: 1
+          asetukset_Targetin_Sijainnista_Riippuva:
+            target_position_parameters:
+              maaritystapa: 0
+              koordinaattiparametri: {x: 0, y: 0}
+        liikuttaja:
+          liikkumistapa: 1
+        lisaa_ampuja: 0
+        ampuja:
+          spawnerin_asetukset:
+            delaytime: 0
+            min_nmb_of_gameobjects_to_spawn_at_time: 0
+            max_nmb_of_gameobjects_to_spawn_at_time: 0
+      ei_havaintoa: 1
+      havainto_tehty: 0
+      nakee: 0
+      nakee_takana: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8ae76d6a45833a479844de4bb986dea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  massa: 1
+  ohjaussuunnat:
+  - ohjaussuunta: {x: 0, y: 1}
+    positiivinen:
+      kaytossa: 1
+      ohjausvoima: 120
+      alustakohtainen_ohjausvoima:
+      - alustan_tag: JumpPad
+        parametrin_arvo: 200
+      nappulan_asetukset:
+        nappulan_toimintapa: 0
+        hyvaksytyt_kosketukset:
+          maaritetaanko: 0
+          Began: 0
+          Stationary: 0
+          Moved: 0
+          Ended: 0
+        nappulan_toteutustapa: 2
+        GUI_elementtina_asetukset:
+          GUIContent_text: Hyppy
+          position:
+            serializedVersion: 2
+            x: 800
+            y: 450
+            width: 200
+            height: 200
+          gui_style:
+            m_Name: 
+            m_Normal:
+              m_Background: {fileID: 2800000, guid: d17218908520ad8429332df3f3e39f5c,
+                type: 3}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_Hover:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_Active:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_Focused:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_OnNormal:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_OnHover:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_OnActive:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_OnFocused:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_Border:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Margin:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Padding:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Overflow:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Font: {fileID: 0}
+            m_FontSize: 0
+            m_FontStyle: 0
+            m_Alignment: 0
+            m_WordWrap: 0
+            m_RichText: 0
+            m_TextClipping: 0
+            m_ImagePosition: 0
+            m_ContentOffset: {x: 0, y: 0}
+            m_FixedWidth: 0
+            m_FixedHeight: 0
+            m_StretchWidth: 0
+            m_StretchHeight: 0
+        GUITexturena_asetukset:
+          gui_texture: {fileID: 0}
+        nimi: Hyppy
+        key: 
+    negatiivinen:
+      kaytossa: 0
+      ohjausvoima: 0
+      alustakohtainen_ohjausvoima: []
+      nappulan_asetukset:
+        nappulan_toimintapa: 0
+        hyvaksytyt_kosketukset:
+          maaritetaanko: 0
+          Began: 0
+          Stationary: 0
+          Moved: 0
+          Ended: 0
+        nappulan_toteutustapa: 2
+        GUI_elementtina_asetukset:
+          GUIContent_text: 
+          position:
+            serializedVersion: 2
+            x: 0
+            y: 0
+            width: 0
+            height: 0
+          gui_style:
+            m_Name: 
+            m_Normal:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_Hover:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_Active:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_Focused:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_OnNormal:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_OnHover:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_OnActive:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_OnFocused:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_Border:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Margin:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Padding:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Overflow:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Font: {fileID: 0}
+            m_FontSize: 0
+            m_FontStyle: 0
+            m_Alignment: 0
+            m_WordWrap: 0
+            m_RichText: 0
+            m_TextClipping: 0
+            m_ImagePosition: 0
+            m_ContentOffset: {x: 0, y: 0}
+            m_FixedWidth: 0
+            m_FixedHeight: 0
+            m_StretchWidth: 0
+            m_StretchHeight: 0
+        GUITexturena_asetukset:
+          gui_texture: {fileID: 0}
+        nimi: 
+        key: 
+  - ohjaussuunta: {x: 1, y: 0}
+    positiivinen:
+      kaytossa: 1
+      ohjausvoima: 60
+      alustakohtainen_ohjausvoima: []
+      nappulan_asetukset:
+        nappulan_toimintapa: 0
+        hyvaksytyt_kosketukset:
+          maaritetaanko: 0
+          Began: 0
+          Stationary: 0
+          Moved: 0
+          Ended: 0
+        nappulan_toteutustapa: 2
+        GUI_elementtina_asetukset:
+          GUIContent_text: Oikea
+          position:
+            serializedVersion: 2
+            x: 200
+            y: 450
+            width: 200
+            height: 200
+          gui_style:
+            m_Name: 
+            m_Normal:
+              m_Background: {fileID: 2800000, guid: d17218908520ad8429332df3f3e39f5c,
+                type: 3}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_Hover:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_Active:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_Focused:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_OnNormal:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_OnHover:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_OnActive:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_OnFocused:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_Border:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Margin:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Padding:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Overflow:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Font: {fileID: 0}
+            m_FontSize: 0
+            m_FontStyle: 0
+            m_Alignment: 0
+            m_WordWrap: 0
+            m_RichText: 0
+            m_TextClipping: 0
+            m_ImagePosition: 0
+            m_ContentOffset: {x: 0, y: 0}
+            m_FixedWidth: 0
+            m_FixedHeight: 0
+            m_StretchWidth: 0
+            m_StretchHeight: 0
+        GUITexturena_asetukset:
+          gui_texture: {fileID: 0}
+        nimi: Oikea
+        key: 
+    negatiivinen:
+      kaytossa: 1
+      ohjausvoima: 60
+      alustakohtainen_ohjausvoima: []
+      nappulan_asetukset:
+        nappulan_toimintapa: 0
+        hyvaksytyt_kosketukset:
+          maaritetaanko: 0
+          Began: 0
+          Stationary: 0
+          Moved: 0
+          Ended: 0
+        nappulan_toteutustapa: 2
+        GUI_elementtina_asetukset:
+          GUIContent_text: Vasen
+          position:
+            serializedVersion: 2
+            x: 10
+            y: 450
+            width: 200
+            height: 200
+          gui_style:
+            m_Name: 
+            m_Normal:
+              m_Background: {fileID: 2800000, guid: d17218908520ad8429332df3f3e39f5c,
+                type: 3}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_Hover:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_Active:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_Focused:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_OnNormal:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_OnHover:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_OnActive:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_OnFocused:
+              m_Background: {fileID: 0}
+              m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+            m_Border:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Margin:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Padding:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Overflow:
+              m_Left: 0
+              m_Right: 0
+              m_Top: 0
+              m_Bottom: 0
+            m_Font: {fileID: 0}
+            m_FontSize: 0
+            m_FontStyle: 0
+            m_Alignment: 0
+            m_WordWrap: 0
+            m_RichText: 0
+            m_TextClipping: 0
+            m_ImagePosition: 0
+            m_ContentOffset: {x: 0, y: 0}
+            m_FixedWidth: 0
+            m_FixedHeight: 0
+            m_StretchWidth: 0
+            m_StretchHeight: 0
+        GUITexturena_asetukset:
+          gui_texture: {fileID: 13100000, guid: 9c513678400699045a222a9f97527ecb,
+            type: 2}
+        nimi: Vasen
+        key: 
+  automaattiset_ohjauskomponentit:
+  - tyyppi: 0
+    parametrit: {fileID: 0}
+  - tyyppi: 1
+    parametrit: {fileID: 0}
+  - tyyppi: 1
+    parametrit: {fileID: 0}
+  - tyyppi: 1
+    parametrit: {fileID: 0}
+  - tyyppi: 2
+    parametrit: {fileID: 0}
+  hyppyaani_asetukset:
+    prefab_to_instantiate: {fileID: 0}
+    destroy_instantiated_gameobject: 0
+    time_to_destroy_instantiated_gameobject: 0
+    koordinaattien_maaritys_vapaasti: 0
+    instantiate_koordinaatin_maaritys:
+      maaritystapa: 0
+      koordinaattiparametri: {x: 0, y: 0}
+    instantiate_rotation_maaritys:
+      maaritystapa: 0
+      kiertoparametri: {x: 0, y: 0, z: 0}
+  animator: {fileID: 0}
+  character_controller: {fileID: 0}
+--- !u!143 &14300000
+CharacterController:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: .25
+  m_SlopeLimit: 45
+  m_StepOffset: .5
+  m_SkinWidth: .00999999978
+  m_MinMoveDistance: 0
+  m_Center: {x: 0, y: -.0500000007, z: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

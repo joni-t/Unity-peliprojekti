@@ -1,0 +1,422 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 212: {fileID: 21200000}
+  - 54: {fileID: 5400000}
+  - 136: {fileID: 13600000}
+  - 114: {fileID: 11400006}
+  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400004}
+  m_Layer: 10
+  m_Name: Enemy2
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400002}
+  - 114: {fileID: 11400008}
+  m_Layer: 0
+  m_Name: LivesEnemy2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400004}
+  - 114: {fileID: 11400010}
+  m_Layer: 0
+  m_Name: Enemy2Pyssy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -4.37113883e-08}
+  m_LocalPosition: {x: 68.6996002, y: 4.2791152, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400004}
+  - {fileID: 400002}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &400002
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: -4.37113883e-08}
+  m_LocalPosition: {x: 33.7590599, y: -9.52731419, z: -4.07836628}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 1
+--- !u!4 &400004
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 0
+--- !u!54 &5400000
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 120
+  m_CollisionDetection: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c49845aa0f51f44093e4f0f3fac4f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  the_prefab_to_instantiate: {fileID: 100000, guid: 21dfdb03a9eed6e4e866f199c6a31c01,
+    type: 2}
+  ignore_collision: 1
+  instantiate_parameters_type: 1
+  instantiate_parameters: {fileID: 11400010}
+  moving_olion_maaritys: 0
+  moving_parametrit:
+    moving_mode: 0
+    speed: 0
+    turn_speed: 0
+    liipaisu_etaisyys_kohdepositionista_vain_MoveToSelectedPosition_and_ThenDestroying: 0
+    add_rotation: 0
+    rotation_parameters:
+      eulerAngles: {x: 0, y: 0, z: 0}
+      aseta_ennen_kiertoa_kulkusuuntaan: 0
+  lisataan_ohjausnappula: 0
+  ohjausnappulan_asetukset:
+    nappulan_toimintapa: 1
+    hyvaksytyt_kosketukset:
+      maaritetaanko: 1
+      Began: 1
+      Stationary: 0
+      Moved: 0
+      Ended: 0
+    nappulan_toteutustapa: 1
+    GUI_elementtina_asetukset:
+      GUIContent_text: ammu
+      position:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 200
+        height: 200
+      gui_style:
+        m_Name: 
+        m_Normal:
+          m_Background: {fileID: 2800000, guid: d17218908520ad8429332df3f3e39f5c,
+            type: 3}
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_Hover:
+          m_Background: {fileID: 0}
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_Active:
+          m_Background: {fileID: 0}
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_Focused:
+          m_Background: {fileID: 0}
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnNormal:
+          m_Background: {fileID: 0}
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnHover:
+          m_Background: {fileID: 0}
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnActive:
+          m_Background: {fileID: 0}
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnFocused:
+          m_Background: {fileID: 0}
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_Border:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Margin:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Padding:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Overflow:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Font: {fileID: 0}
+        m_FontSize: 0
+        m_FontStyle: 0
+        m_Alignment: 0
+        m_WordWrap: 0
+        m_RichText: 1
+        m_TextClipping: 0
+        m_ImagePosition: 0
+        m_ContentOffset: {x: 0, y: 0}
+        m_FixedWidth: 0
+        m_FixedHeight: 0
+        m_StretchWidth: 1
+        m_StretchHeight: 0
+    GUITexturena_asetukset:
+      gui_texture: {fileID: 13100000, guid: 9ad7ce1f157d1764dbc582e3a0d76e9b, type: 2}
+    nimi: Ampuminen
+    key: space
+  lisataan_spawneri: 1
+  spawnerin_asetukset:
+    delaytime: 1.79999995
+    min_nmb_of_gameobjects_to_spawn_at_time: 1
+    max_nmb_of_gameobjects_to_spawn_at_time: 1
+  instantioi_lisaprefab: 0
+  lisaprefab_instantiointiasetukset:
+    prefab_to_instantiate: {fileID: 0}
+    destroy_instantiated_gameobject: 0
+    time_to_destroy_instantiated_gameobject: 0
+    koordinaattien_maaritys_vapaasti: 0
+    instantiate_koordinaatin_maaritys:
+      maaritystapa: 0
+      koordinaattiparametri: {x: 0, y: 0}
+    instantiate_rotation_maaritys:
+      maaritystapa: 0
+      kiertoparametri: {x: 0, y: 0, z: 0}
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6f774488eb29f84ca0400ffcbc652ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  other_tag: Bullet
+  vilkkumisaika: .100000001
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f67519ffbd5084b8fe4cbbcd64fb4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiedot:
+    targetPrefabs: []
+    targetPrefabs_with_Tags: []
+    allowed_area:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    moving_parameters:
+      moving_mode: 0
+      speed: 0
+      turn_speed: 0
+      liipaisu_etaisyys_kohdepositionista_vain_MoveToSelectedPosition_and_ThenDestroying: 0
+      add_rotation: 0
+      rotation_parameters:
+        eulerAngles: {x: 0, y: 0, z: 0}
+        aseta_ennen_kiertoa_kulkusuuntaan: 0
+    handling_instantiate_in_destroying:
+      prefab_to_instantiate: {fileID: 100000, guid: 6608a940d3d7ecc42b250285274e6658,
+        type: 2}
+      destroy_instantiated_gameobject: 1
+      time_to_destroy_instantiated_gameobject: 1
+      koordinaattien_maaritys_vapaasti: 0
+      instantiate_koordinaatin_maaritys:
+        maaritystapa: 0
+        koordinaattiparametri: {x: 0, y: 0}
+      instantiate_rotation_maaritys:
+        maaritystapa: 0
+        kiertoparametri: {x: 0, y: 0, z: 0}
+    luo_prefabille_spawneri: 0
+    spawnerin_asetukset:
+      timer:
+        delaytime: 1
+        min_nmb_of_gameobjects_to_spawn_at_time: 1
+        max_nmb_of_gameobjects_to_spawn_at_time: 1
+      randoming_initial_point:
+        shape: 0
+        area:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        radius: 0
+        middle_point: {x: 0, y: 0}
+      randoming_target_point:
+        shape: 0
+        area:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        radius: 0
+        middle_point: {x: 0, y: 0}
+      set_random_speed: 0
+      random_speed_min: 0
+      random_speed_max: 0
+      lisaa_muita_prefabeja: []
+      aseta_tapahtumien_rekisterointi: 0
+      tapahtumien_rekisterointi:
+        tyyppilista: 0
+        parametrit: {fileID: 0}
+        ohita_levelin_tila: 0
+  aseta_tapahtumien_rekisterointi_for_instantiate: 0
+  tapahtumien_rekisterointi_for_instantiate:
+    tyyppilista: 0
+    parametrit: {fileID: 0}
+    ohita_levelin_tila: 0
+    tyyppilista2: 0
+  aseta_tapahtumien_rekisterointi_for_destroy: 1
+  tapahtumien_rekisterointi_for_destroy:
+    tyyppilista: 0
+    parametrit: {fileID: 11400008}
+    ohita_levelin_tila: 0
+    tyyppilista2: 1
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce453851147b88c47bbaf40ab20dae85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parametrit:
+    laskurin_asetukset:
+      tila_alussa: 1
+      lisaa_level_complete_ehdoksi:
+        lisaa: 0
+        kaanteinen_tila: 0
+      lisaa_level_failed_ehdoksi:
+        lisaa: 0
+        kaanteinen_tila: 0
+      raja: 3
+    muutos: 1
+    tilan_lukeminen: 1
+    vaihtolista: []
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9da14b8e98fb42f47a8365f96eaee0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initial_position_parameters:
+    maaritystapa: 1
+    koordinaattiparametri: {x: 0, y: 0}
+  target_position_parameters:
+    maaritystapa: 3
+    koordinaattiparametri: {x: 18, y: 0}
+--- !u!136 &13600000
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: .5
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!212 &21200000
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 009c421ada151b446a1b55b9b5707a0c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
