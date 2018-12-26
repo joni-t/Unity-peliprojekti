@@ -5,4 +5,4 @@ Esteenhavaitsija on totetettu Plugins->Artifacial_Intelligence_Handling.cs ja si
 Esteenhavaitsija on testivalmiina. Riittää, kun avaa tESTI-scenen ja käynnistää sen. Myös peliukkelin ohjausta nuolinäppäimillä voi kokeilla. Ohjaus on kytketty valmiiksi Player-hahmoon. Testausta varten kamera on kytkettävä Player-hahmoon, joten avaa Hierarchy->Mokkuloiden_hallinta->Inspector->Smooth_camera_asetukset -> vie Hierarchy->Player raahaamalla Target-kenttään.
 Tämä projekti toimii Unityn versiossa 2018.3.0f2
 Projekti on Wildman Games Oy:n tuotantoa. Kaikesta koodauksesta on vastannut Joni Taipale. Grafiikasta ja pelisuunnittelusta on vastannut Juhamatti Ollikainen.
-Mikä projekti kiinnostaa, voin tehdä tarkemmat ohjeet projektin käyttöönottamiseksi.
+Mikäli projekti kiinnostaa, voin tehdä tarkemmat ohjeet projektin käyttöönottamiseksi.
