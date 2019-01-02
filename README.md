@@ -6,3 +6,5 @@ Esteenhavaitsija on testivalmiina. Riittää, kun avaa tESTI-scenen ja käynnist
 Tämä projekti toimii Unityn versiossa 2018.3.0f2
 Projekti on Wildman Games Oy:n tuotantoa. Kaikesta koodauksesta on vastannut Joni Taipale. Grafiikasta ja pelisuunnittelusta on vastannut Juhamatti Ollikainen.
 Mikäli projekti kiinnostaa, voin tehdä tarkemmat ohjeet projektin käyttöönottamiseksi.
+Plugins-kansiossa olevien dll-palikoiden koodit on saatavilla: https://github.com/joni-t/2D-pelin-koodikirjasto-Unityyn
+Valmiit pelit voi ladata tarkasteltavaksi. https://play.google.com/store/apps/developer?id=Wildman+Games&hl=en-gb
